@@ -1,40 +1,111 @@
 :root {
     font-size: 16px;
-    --dark: #010101;
-    --light:white;
+    --black: #010101;
+    --white: #ffffff;
+    --dark: #1d1d1d;
+    --light: #b7b7b7;
     --gray: #989696;
     --main-font: 'Helvetica Neue LT Pro', sans-serif;
-    --menu-font:'Roboto', sans-serif;
-    --paragraph-font:'Merriweather', serif;
+    --menu-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Merriweather', serif;
+    --button-font: 'Montserrat', sans-serif;
 }
 
-header {
-    background-color: var(--light);
-    padding: 1rem 0;
-    text-align: center;
+article h1,
+article h2 {
+    font-family: var(--main-font);
+    padding: 0.5rem;
+    font-size: 2.1rem;
 }
 
+article p {
+    font-family: var(--paragraph-font);
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+/*HEADER*/
+
+/*navigation*/
 .menu {
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.link a:hover {
-    color: var(--dark);
-}
-
-.link a{
+.link a {
     text-decoration: none;
+    font-family: var(--menu-font);
     color: var(--gray);
     padding: 0.5rem 0.5rem;
     margin: 0 0.7rem;
     font-size: 0.8rem;
-    font-family: var(--menu-font);
+}
+
+.link a:hover {
+    color: var(--black);
 }
 
 .link img {
     width: 3.4rem;
     height: 3.3rem;
     margin: 0 2rem;
+}
+
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*header text*/
+.home h1 {
+    font-weight: 300;
+    font-size: 2.75rem;
+}
+
+/*read more//button*/
+.home button {
+    border: 1px solid var(--black);
+    font-family: var(--button-font);
+    background-color: var(--white);
+    color: var(--black);
+    margin-top: 2.5rem;
+    padding: 1rem 2.8rem;
+    font-size: 0.7rem;
+}
+
+/*go down*/
+.dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    background-color: var(--light);
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.dot:nth-child(1) {
+    opacity: 33%;
+}
+
+.dot:nth-child(2) {
+    opacity: 66%;
 }
