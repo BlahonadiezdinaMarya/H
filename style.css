@@ -1,7 +1,7 @@
 :root {
     font-size: 16px;
     --black: #010101;
-    --white: #ffffff;
+    --white: #fefefe;
     --dark: #1d1d1d;
     --light: #b7b7b7;
     --gray: #989696;
@@ -14,14 +14,16 @@
 article h1,
 article h2 {
     font-family: var(--main-font);
+    color: var(--dark);
+    font-weight: 300;
     padding: 0.5rem;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 article p {
     font-family: var(--paragraph-font);
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*HEADER*/
@@ -71,7 +73,6 @@ article p {
 
 /*header text*/
 .home h1 {
-    font-weight: 300;
     font-size: 2.75rem;
 }
 
@@ -109,3 +110,109 @@ article p {
 .dot:nth-child(2) {
     opacity: 66%;
 }
+
+/*ABOUT US*/
+.about-us {
+    position: relative;
+    background-color: var(--dark);
+    height: 150vh;
+}
+
+/*main line*/
+.line {
+    position: absolute;
+    margin: 0 auto;
+    background-color: var(--white);
+    height: 100%;
+    width: 4px;
+    left: calc(50% - 2px);
+}
+
+.circle {
+    position: absolute;
+    margin: 0 auto;
+    background-color: var(--dark);
+    border: 4px solid var(--white);
+    width: 0.8rem;
+    height: 0.8rem;
+    left: calc(50% - 0.7rem);
+    border-radius: 50%;
+    top: 15%;
+}
+
+.circle1 {
+    top: 13%;
+}
+
+.circle2 {
+    top: 23%;
+}
+
+.circle3 {
+    top: 43%;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: calc(50% - 1.1rem);
+}
+
+.circle4 {
+    top: 60%;
+}
+
+/*2011 2012 2013 2014*/
+.year {
+    position: absolute;
+    color: var(--white);
+    width: 25%;
+    top: 12%;
+}
+
+.year:nth-child(odd) {
+    text-align: right;
+    left: 20%;
+}
+
+.year:nth-child(2n) {
+    right: 20%;
+}
+
+.year:nth-child(2) {
+    top: 22%;
+}
+
+.year:nth-child(3) {
+    top: 42%;
+}
+
+.year:nth-child(4) {
+    top: 59%;
+}
+
+.year h1 {
+    font-family: var(--main-font);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.year p {
+    text-align: left;
+    font-family: var(--button-font);
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+
+/*background*/
+.buildings-black,
+.buildings-white {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.buildings-black {
+    bottom: -1rem;
+    z-index: 1;
+}
+
