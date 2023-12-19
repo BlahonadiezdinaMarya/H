@@ -1,10 +1,11 @@
 :root {
     font-size: 16px;
     --black: #010101;
-    --white: #fefefe;
     --dark: #1d1d1d;
-    --light: #b7b7b7;
+    --dark-gray: #464646;
     --gray: #989696;
+    --light: #b3b3b3;
+    --white: #fefefe;
     --main-font: 'Helvetica Neue LT Pro', sans-serif;
     --menu-font: 'Roboto', sans-serif;
     --paragraph-font: 'Merriweather', serif;
@@ -17,13 +18,14 @@ article h2 {
     color: var(--dark);
     font-weight: 300;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 article p {
     font-family: var(--paragraph-font);
     color: var(--gray);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /*HEADER*/
@@ -56,7 +58,7 @@ article p {
 }
 
 .home {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,3 +218,69 @@ article p {
     z-index: 1;
 }
 
+/*TEAM*/
+
+.team {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team article {
+    margin-top: 4rem;
+}
+
+.team-cards {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.person {
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.person:nth-child(2) {
+    top: -5rem;
+}
+
+.person img {
+    width: 10rem;
+    margin: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.position {
+    font-size: 0.8rem;
+    color: var(--light);
+    margin: 0.3rem;
+    ;
+}
+
+.social-media {
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    color: var(--light);
+    margin-top: 0.8rem;
+}
