@@ -15,16 +15,16 @@
 <body>
     <header>
         <ul class="menu">
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">About Us</a></li>
-            <li class="link"><a href="#">Team</a></li>
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about-us">About Us</a></li>
+            <li class="link"><a href="#team">Team</a></li>
             <li class="link"><img src="./images/logo.png"></li>
-            <li class="link"><a href="#">Services</a></li>
-            <li class="link"><a href="#">Blog</a></li>
-            <li class="link"><a href="#">Contact Us</a></li>
+            <li class="link"><a href="#services">Services</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link"><a href="#contact-us">Contact Us</a></li>
         </ul>
     </header>
-    <section class="home">
+    <section id="home" class="home">
         <article class="content">
             <h1>We build it with passion</h1>
             <p>Just to be clear, we do this for fun not for you, just kidding.</p>
@@ -36,7 +36,7 @@
             <div class="dot"></div>
         </div>
     </section>
-    <section class="about-us">
+    <section id="about-us" class="about-us">
         <div class="line"></div>
         <div class="circle circle1"></div>
         <div class="circle circle2"></div>
@@ -67,7 +67,7 @@
         <img class="buildings-black" src="./images/Buildings__Black.png">
         <img class="buildings-white" src="./images/Buildings__White.png">
     </section>
-    <section class="team">
+    <section id="team" class="team">
         <article>
             <h2>This is our team</h2>
             <p>We are small but effective and ...</p>
@@ -102,63 +102,59 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
         <article>
             <h2>We provide you everything</h2>
             <p>Maybe not everything, but we provide you some stuff.</p>
         </article>
         <div class="services-cards">
             <div class="service">
-                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-service fa-solid fa-chart-line"></i>
                 <h3 class="service-name">Some Analytics</h3>
                 <p>Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
             </div>
             <div class="service">
-                <i class="fa-solid fa-heart"></i>
+                <i class="fa-service fa-solid fa-heart"></i>
                 <h3 class="service-name">We provide you love</h3>
                 <p>Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
             </div>
             <div class="service">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <i class="fa-service fa-solid fa-cloud-arrow-up"></i>
                 <h3 class="service-name">And Some Cloud</h3>
                 <p>Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
             </div>
         </div>
-        <div class="blog">
+        <div id="blog" class="blog">
             <div class="blog-back"></div>
             <button>VISIT OUR BLOG</button>
         </div>
     </section>
-    <section class="contact-us">
+    <section id="contact-us" class="contact-us">
         <article class>
-            <h2 class="heading">Contact us</h2>
+            <h2>Contact us</h2>
             <p>We know what we need to do</p>
         </article>
-        <div class="">
-            <div>
-                <i></i>
-                <p></p>
+        <div class="contact-information">
+            <div class="info">
+                <i class="fa-contact fa-solid fa-phone"></i>
+                <p>555-222-333</p>
             </div>
-            <div>
-                <i></i>
-                <p></p>
+            <div class="info">
+                <i class="fa-contact fa-solid fa-location-dot"></i>
+                <p>Here is some address</p>
             </div>
-            <div>
-                <i></i>
-                <p></p>
+            <div class="info">
+                <i class="fa-contact fa-solid fa-envelope"></i>
+                <p>somemail@hotmail.com</p>
             </div>
         </div>
-        <form>
-            <label>Full Name</label>
-            <input>
-            <label>Email</label>
-            <input>
-            <label>Number</label>
-            <input>
-            <label>Write your Massage here ...</label>
-            <textarea></textarea>
-            <button id="form-button">Submit</button>
-        </form>
+        <div class="contact-form">
+            <input class="form" type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+            <input class="form" type="email" id="email" name="email" placeholder="Email" required>
+            <input class="form" type="tel" id="number" name="number" placeholder="Number" required>
+            <textarea class="form" id="message" name="message" rows="4" placeholder="Write your Message here..." required></textarea>
+            <button class="form" type="submit">Submit</button>
+        </div>
         <h4>Copyright © Kenan Hamidic. All rights reserved.</h4>
     </section>
 </body>
